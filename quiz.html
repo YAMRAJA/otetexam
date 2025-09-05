@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div id="quiz-app">
+
+    <!-- Config Popup -->
+    <div class="config-popup active" id="config-popup">
+      <h2>Select Subject</h2>
+      <select id="subject">
+        <option value="">--Select Subject--</option>
+      </select>
+      <button class="start-quiz-btn" id="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="quiz-popup" id="quiz-popup">
+      <div class="score-box" id="score-box">Score: 0 / 0</div>
+      <div id="quiz-container"></div>
+      <div class="quiz-timer"><div class="timer-duration" id="timer-bar"></div></div>
+      <div id="controls">
+        <button id="prev-btn">Previous</button>
+        <button id="next-btn">Next</button>
+        <button id="submit-btn">Submit</button>
+      </div>
+    </div>
+
+    <!-- Result Popup -->
+    <div class="result-popup" id="result-popup">
+      <h2>Quiz Completed ✅</h2>
+      <div id="result"></div>
+      <button class="try-again-btn" id="try-again-btn">Try Again</button>
+    </div>
+  </div>
+   
+  <!--Odia localization-->
+    <body>
+  <div class="top-bar">
+    <div class="language-toggle">
+      <label for="language-select">🌍</label>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="or">ଓଡ଼ିଆ</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="quiz-app">
+    <!-- Your existing quiz content -->
+  </div>
+</body>
+
+  <!-- Subject files -->
+  <script src="assets/programming.js"></script>
+  <script src="assets/geography.js"></script>
+  <script src="assets/mathematics.js"></script>
+  <script src="assets/entertainment.js"></script>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
