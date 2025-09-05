@@ -1,0 +1,1 @@
+const geographyQuestions = [{question:'Which is the longest river?', options:['Amazon','Nile','Yangtze'], correctAnswer:1}];
