@@ -1,18 +1,14 @@
-// Combine subject files
-const questions = [
-  { category: "Programming", questions: programmingQuestions },
-  { category: "Geography", questions: geographyQuestions },
-  { category: "Mathematics", questions: mathematicsQuestions },
-  { category: "Entertainment", questions: entertainmentQuestions }
-];
+const loginForm = document.getElementById("loginForm");
+    loginForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
 
-// Load extra questions from localStorage
-const savedData = JSON.parse(localStorage.getItem("quizData")) || {};
-for (let subject in savedData) {
-  let subjectObj = questions.find(q => q.category === subject);
-  if (subjectObj) {
-    subjectObj.questions.push(...savedData[subject]);
-  }
-}
-
-console.log("Final Questions for Quiz:", questions);
+      if(user === "admin" && pass === "admin123"){
+        window.location.href = "admin/admin.html";  
+      } else if(user === "user" && pass === "user123"){
+        window.location.href = "user/quiz.html";   
+      } else {
+        document.getElementById("error-msg").textContent = "Invalid Login!";
+      }
+    });

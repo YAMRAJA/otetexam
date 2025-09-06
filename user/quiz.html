@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
+   <!-- Place inside <body> before #quiz-app -->
+
   <div id="quiz-app">
 
     <!-- Config Popup -->
@@ -21,6 +23,7 @@
 
     <!-- Quiz Container -->
     <div class="quiz-popup" id="quiz-popup">
+      <div class="subject-name" id="subject-name"></div>
       <div class="score-box" id="score-box">Score: 0 / 0</div>
       <div id="quiz-container"></div>
       <div class="quiz-timer"><div class="timer-duration" id="timer-bar"></div></div>
@@ -34,34 +37,17 @@
     <!-- Result Popup -->
     <div class="result-popup" id="result-popup">
       <h2>Quiz Completed ✅</h2>
+      <div class="subject-name" id="result-subject-name"></div>
       <div id="result"></div>
       <button class="try-again-btn" id="try-again-btn">Try Again</button>
     </div>
   </div>
    
-  <!--Odia localization-->
-    <body>
-  <div class="top-bar">
-    <div class="language-toggle">
-      <label for="language-select">🌍</label>
-      <select id="language-select">
-        <option value="en">English</option>
-        <option value="or">ଓଡ଼ିଆ</option>
-      </select>
-    </div>
-  </div>
-
-  <div id="quiz-app">
-    <!-- Your existing quiz content -->
-  </div>
-</body>
-
   <!-- Subject files -->
   <script src="assets/programming.js"></script>
   <script src="assets/geography.js"></script>
   <script src="assets/mathematics.js"></script>
   <script src="assets/entertainment.js"></script>
-
   <script src="quiz.js"></script>
 </body>
 </html>
