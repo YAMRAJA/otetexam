@@ -1,1 +1,0 @@
-const mathematicsQuestions = [{question:'What is 12 x 12?', options:['124','144','154'], correctAnswer:1}];

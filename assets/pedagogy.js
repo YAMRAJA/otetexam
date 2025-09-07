@@ -1,1 +1,0 @@
-const entertainmentQuestions = [{question:'Who is the King of Pop?', options:['Michael Jackson','Elvis Presley','Prince'], correctAnswer:0}];
