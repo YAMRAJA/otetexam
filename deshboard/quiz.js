@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Timer variables
   
   let timer = null;
-  let timerDuration = 20; // seconds per question
+  let timerDuration = 60; // seconds per question
   let timerRemaining = timerDuration;
   
 
